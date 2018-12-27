@@ -24,7 +24,8 @@ unsupervised.parameters.burnin = 0;
 
 unsupervised.analysis = {'overlap', 'speed'};
 
-experiments = {baseline, unsupervised};
+%experiments = {baseline, unsupervised};
+experiments = {baseline};
 
 end
 

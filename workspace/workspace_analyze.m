@@ -16,6 +16,8 @@ function workspace_analyze(trackers, sequences, experiments, identifier, varargi
 %    end
 %end
 
+graphics_toolkit gnuplot
+
 context = document_context(identifier);
 
 table_scores = {};
@@ -48,7 +50,7 @@ for e = 1:numel(experiments)
     for a = 1:numel(analyses)
         analysis = analyses{a};
 
-        report_type = ['report_', analysis.type];
+        report_type = ['report_', analysis.type]
         
         try
             report_function = str2func(report_type);

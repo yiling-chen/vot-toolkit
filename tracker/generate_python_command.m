@@ -56,6 +56,10 @@ else
 	python_flags = {};
 end
 
+%python_executable = '/home/yilingchen/miniconda3/envs/mdnet/bin/python';
+python_executable = '/home/yilingchen/miniconda3/envs/vot-eval/bin/python';
+%python_executable = '/home/yilingchen/miniconda3/bin/python';
+
 argument_string = strjoin(python_flags, ' ');
 
 python_script = sprintf('import sys; %s import %s', path_string, script);
